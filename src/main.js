@@ -1,6 +1,6 @@
 import "./style.css";
 /* Import af Motion One bibliotek */
-import { animate, stagger, inView, scroll, timeline } from "motion"
+import { animate, stagger, inView, scroll, timeline } from "motion";
 
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("img");
