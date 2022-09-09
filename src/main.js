@@ -8,3 +8,10 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes,
   });
 });
+
+document.querySelectorAll(".polaroid").forEach((polaroid) => {
+  const elementderskalvises = polaroid.querySelector("p");
+  scroll(animate(elementderskalvises, { opacity: [1, 0] }), {
+    target: elementderskalvises,
+  });
+});
