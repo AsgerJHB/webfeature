@@ -15,3 +15,17 @@ document.querySelectorAll(".polaroid").forEach((polaroid) => {
     target: elementderskalvises,
   });
 });
+
+const lillevideo = document.querySelector("#videofil");
+lillevideo.pause();
+
+scroll(
+  ({ y }) => {
+    if (!lillevideo.readyState) return;
+    lillevideo.currentTime = lillevideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle"),
+    offset: ["-100vh", "end end"],
+  }
+);
