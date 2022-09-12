@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontSize: {
       //brødtekster
+      tiny: "0.618rem",
       xs: "1rem",
       sm: "1.618rem",
       lg: "2.618rem",
