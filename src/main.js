@@ -2,6 +2,8 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
+scroll(animate(".progress-bar", { scaleX: [0, 1] }));
+
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("img");
   scroll(animate(elementderskalparallaxes, { y: [-500, 300] }), {
