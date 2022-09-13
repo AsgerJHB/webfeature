@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        glitch_baggrund: "url('img/glitch_baggrund.webp')",
+      },
+    },
     fontSize: {
       //brødtekster
       tiny: "0.618rem",
