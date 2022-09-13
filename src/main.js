@@ -31,3 +31,11 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
+
+inView(".polaroid_section", ({ target }) => {
+  animate(
+    target.querySelectorAll(".polaroid"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
