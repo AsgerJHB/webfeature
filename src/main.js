@@ -37,7 +37,7 @@ document
 
     /* element 3 (øverst til højre)*/
     const elementderskalparallaxes3 = parallaxcontainer.querySelector(".img3");
-    scroll(animate(elementderskalparallaxes3, { y: [0, 500] }), {
+    scroll(animate(elementderskalparallaxes3, { y: [0, 700] }), {
       target: elementderskalparallaxes3,
     });
 
@@ -48,17 +48,20 @@ document
     });
   });
 
-document.querySelectorAll(".polaroid").forEach((polaroid) => {
-  const elementderskalvises = polaroid.querySelector("p");
-  scroll(animate(elementderskalvises, { opacity: [1, 0] }), {
-    target: elementderskalvises,
-  });
-});
+/* paralax 2*/
 
-inView(".polaroid_section", ({ target }) => {
-  animate(
-    target.querySelectorAll(".polaroid"),
-    { x: [-2000, 0] },
-    { duration: 1, delay: stagger(1, { start: 0.25 }) }
-  );
-});
+document
+  .querySelectorAll(".parallaxcontainermedflereelementer2")
+  .forEach((parallaxcontainer) => {
+    /* element 5 (øverst til venstre)*/
+    const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
+    scroll(animate(elementderskalparallaxes5, { y: [0, 700] }), {
+      target: elementderskalparallaxes5,
+    });
+
+    /* element 6 (øverst til højre) */
+    const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
+    scroll(animate(elementderskalparallaxes6, { y: [0, 700] }), {
+      target: elementderskalparallaxes6,
+    });
+  });
