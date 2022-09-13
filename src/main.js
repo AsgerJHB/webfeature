@@ -39,17 +39,3 @@ inView(".polaroid_section", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
-
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
-
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);
