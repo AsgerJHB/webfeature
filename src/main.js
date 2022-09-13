@@ -2,20 +2,6 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
-
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);
-
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
@@ -24,6 +10,20 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
     target: elementderskalparallaxes,
   });
 });
+
+// const lillevideo = document.querySelector("#videofil");
+// lillevideo.pause();
+
+// scroll(
+//   ({ y }) => {
+//     if (!lillevideo.readyState) return;
+//     lillevideo.currentTime = lillevideo.duration * y.progress;
+//   },
+//   {
+//     target: document.querySelector(".videoarticle"),
+//     offset: ["-100vh", "end end"],
+//   }
+// );
 
 document.querySelectorAll(".polaroid").forEach((polaroid) => {
   const elementderskalvises = polaroid.querySelector("p");
@@ -40,7 +40,10 @@ inView(".polaroid_section", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0cfcb4acf22ccc9ddff83c6be465e40e1bf77d41
 const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
 
@@ -54,4 +57,7 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
+<<<<<<< HEAD
 >>>>>>> 5ef3118620212bfadb92da9eb82c3b7840f5a47d
+=======
+>>>>>>> 0cfcb4acf22ccc9ddff83c6be465e40e1bf77d41
