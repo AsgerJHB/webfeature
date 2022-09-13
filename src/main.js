@@ -32,7 +32,6 @@ document.querySelectorAll(".polaroid").forEach((polaroid) => {
   });
 });
 
-<<<<<<< HEAD
 inView(".polaroid_section", ({ target }) => {
   animate(
     target.querySelectorAll(".polaroid"),
@@ -40,22 +39,3 @@ inView(".polaroid_section", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0cfcb4acf22ccc9ddff83c6be465e40e1bf77d41
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
-
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);
