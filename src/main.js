@@ -18,12 +18,35 @@ scroll(
 
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
-document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
-  const elementderskalparallaxes = parallaxcontainer.querySelector("img");
-  scroll(animate(elementderskalparallaxes, { y: [-500, 300] }), {
-    target: elementderskalparallaxes,
+/* paralax */
+
+document
+  .querySelectorAll(".parallaxcontainermedflereelementer")
+  .forEach((parallaxcontainer) => {
+    /*eleement 1 (øverst til venstre) */
+    const elementderskalparallaxes1 = parallaxcontainer.querySelector(".img1");
+    scroll(animate(elementderskalparallaxes1, { y: [0, 1000] }), {
+      target: elementderskalparallaxes1,
+    });
+
+    /* element 2 (nederst til venstre)*/
+    const elementderskalparallaxes2 = parallaxcontainer.querySelector(".img2");
+    scroll(animate(elementderskalparallaxes2, { y: [0, 1000] }), {
+      target: elementderskalparallaxes2,
+    });
+
+    /* element 3 (øverst til højre)*/
+    const elementderskalparallaxes3 = parallaxcontainer.querySelector(".img3");
+    scroll(animate(elementderskalparallaxes3, { y: [0, 500] }), {
+      target: elementderskalparallaxes3,
+    });
+
+    /* element 4 (nederst til højre) */
+    const elementderskalparallaxes4 = parallaxcontainer.querySelector(".img4");
+    scroll(animate(elementderskalparallaxes4, { y: [0, 700] }), {
+      target: elementderskalparallaxes4,
+    });
   });
-});
 
 document.querySelectorAll(".polaroid").forEach((polaroid) => {
   const elementderskalvises = polaroid.querySelector("p");
