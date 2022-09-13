@@ -32,7 +32,6 @@ document.querySelectorAll(".polaroid").forEach((polaroid) => {
   });
 });
 
-<<<<<<< HEAD
 inView(".polaroid_section", ({ target }) => {
   animate(
     target.querySelectorAll(".polaroid"),
@@ -40,10 +39,7 @@ inView(".polaroid_section", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0cfcb4acf22ccc9ddff83c6be465e40e1bf77d41
+
 const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
 
@@ -57,7 +53,3 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
-<<<<<<< HEAD
->>>>>>> 5ef3118620212bfadb92da9eb82c3b7840f5a47d
-=======
->>>>>>> 0cfcb4acf22ccc9ddff83c6be465e40e1bf77d41
