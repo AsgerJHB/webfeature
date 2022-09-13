@@ -23,11 +23,21 @@
       <!-- Autoplay video sektion -->
       <section id="hero_sektion" class="">
         <!-- <video src=""></video> -->
-        <img
+        <!-- <img
           class="sticky top-0 h-screen w-screen opacity-70"
           src="img/video_foto.png"
           alt=""
-        />
+        /> -->
+
+        <video
+          class="sticky top-0 h-screen w-full opacity-70"
+          id="video"
+          autoplay
+          muted
+          loop
+        >
+          <source src="eksperimentel-video.mp4" type="video/mp4" />
+        </video>
 
         <div class="">
           <h1 class="relative h-screen w-screen text-center text-3xl">
@@ -50,7 +60,7 @@
           <p class="relative h-screen w-screen text-center text-sm">
             faktisk kan han ikke fordrage sit eget arbejde.
           </p>
-          <h1 class="relative h-screen w-screen text-center text-2xl">
+          <h1 class="sticky h-screen w-screen text-center text-2xl">
             Uperfekt perfekt
           </h1>
         </div>
@@ -137,31 +147,31 @@
         </h2>
         <div class="flex h-screen w-screen justify-around">
           <div
-            class="polaroid shake-bl grid h-64 w-48 place-items-center border-y border-x border-black bg-white"
+            class="polaroid shake-bl grid h-80 w-56 place-items-center border-2 border-black bg-white"
           >
-            <div class="grid h-52 w-44 place-content-center bg-gray-300">
-              <h3 class="text-sm text-black">
+            <div class="h-60 w-52 border-2 border-stone-800 bg-gray-300">
+              <h3 class="flex text-center text-lg text-black">
                 Pierre sælger 2 millioner fotos om året
               </h3>
             </div>
           </div>
 
           <div
-            class="polaroid shake-bl grid h-64 w-48 place-items-center border-y border-x border-black bg-white"
+            class="polaroid shake-bl grid h-80 w-56 place-items-center border-2 border-black bg-white"
           >
-            <div class="grid h-52 w-44 place-content-center bg-gray-300">
-              <h3 class="text-sm text-black">
-                Pierre sælger 2 millioner fotos om året
+            <div class="h-60 w-52 border-2 border-stone-800 bg-gray-300">
+              <h3 class="flex text-center text-lg text-black">
+                Det svarer til én fotolicens hvert 16. sekund
               </h3>
             </div>
           </div>
 
           <div
-            class="polaroid shake-bl grid h-64 w-48 place-items-center border-y border-x border-black bg-white"
+            class="polaroid shake-bl grid h-80 w-56 place-items-center border-2 border-black bg-white"
           >
-            <div class="grid h-52 w-44 place-content-center bg-gray-300">
-              <h3 class="text-sm text-black">
-                Pierre sælger 2 millioner fotos om året
+            <div class="h-60 w-52 border-2 border-stone-800 bg-gray-300">
+              <h3 class="flex text-center text-lg text-black">
+                Du ser hans fotos ca. 2 gange om dagen
               </h3>
             </div>
           </div>
@@ -222,7 +232,7 @@
           Pierre tjente godt det følgende årti. Men stille og roligt begyndte
           billederne også at
         </p>
-        <p class="kvalme p-40 text-xl uppercase shadow-red-600 drop-shadow-2xl">
+        <p class="kvalme flicker-in-1 p-40 text-xl uppercase">
           give ham kvalme.
         </p>
       </section>
@@ -236,7 +246,7 @@
       <section class="sticky">
         <div class="videocontainer sticky top-1/4 w-full">
           <video
-            src="page_flip_bog.mp4"
+            src="page_flip_v6.mp4"
             muted
             playsinline
             class="w-1/2"

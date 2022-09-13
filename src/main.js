@@ -32,6 +32,7 @@ document.querySelectorAll(".polaroid").forEach((polaroid) => {
   });
 });
 
+<<<<<<< HEAD
 inView(".polaroid_section", ({ target }) => {
   animate(
     target.querySelectorAll(".polaroid"),
@@ -39,3 +40,18 @@ inView(".polaroid_section", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+=======
+const lillevideo = document.querySelector("#videofil");
+lillevideo.pause();
+
+scroll(
+  ({ y }) => {
+    if (!lillevideo.readyState) return;
+    lillevideo.currentTime = lillevideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle"),
+    offset: ["-100vh", "end end"],
+  }
+);
+>>>>>>> 5ef3118620212bfadb92da9eb82c3b7840f5a47d
