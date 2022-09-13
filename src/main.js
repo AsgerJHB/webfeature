@@ -11,19 +11,19 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   });
 });
 
-// const lillevideo = document.querySelector("#videofil");
-// lillevideo.pause();
+const lillevideo = document.querySelector("#videofil");
+lillevideo.pause();
 
-// scroll(
-//   ({ y }) => {
-//     if (!lillevideo.readyState) return;
-//     lillevideo.currentTime = lillevideo.duration * y.progress;
-//   },
-//   {
-//     target: document.querySelector(".videoarticle"),
-//     offset: ["-100vh", "end end"],
-//   }
-// );
+scroll(
+  ({ y }) => {
+    if (!lillevideo.readyState) return;
+    lillevideo.currentTime = lillevideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle"),
+    offset: ["-100vh", "end end"],
+  }
+);
 
 document.querySelectorAll(".polaroid").forEach((polaroid) => {
   const elementderskalvises = polaroid.querySelector("p");
@@ -40,16 +40,16 @@ inView(".polaroid_section", ({ target }) => {
   );
 });
 
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
+// const lillevideo = document.querySelector("#videofil");
+// lillevideo.pause();
 
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);
+// scroll(
+//   ({ y }) => {
+//     if (!lillevideo.readyState) return;
+//     lillevideo.currentTime = lillevideo.duration * y.progress;
+//   },
+//   {
+//     target: document.querySelector(".videoarticle"),
+//     offset: ["-100vh", "end end"],
+//   }
+// );
