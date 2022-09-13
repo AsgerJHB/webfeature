@@ -309,3 +309,22 @@
   -webkit-animation: flicker-in-1 2s linear both;
   animation: flicker-in-1 2s linear both;
 }
+
+/* mulig baggrund? */
+/* background-animate {
+  background-size: 400%;
+
+  -webkit-animation: gradient_baggrund 3s ease infinite;
+  -moz-animation: gradient_baggrund 3s ease infinite;
+  animation: gradient_baggrund 3s ease infinite;
+}
+
+@keyframes gradient_baggrund {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+} */
