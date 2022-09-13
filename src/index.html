@@ -23,11 +23,20 @@
       <!-- Autoplay video sektion -->
       <section id="hero_sektion" class="">
         <!-- <video src=""></video> -->
-        <img
+        <!-- <img
           class="sticky top-0 h-screen w-screen opacity-70"
           src="img/video_foto.png"
           alt=""
-        />
+        /> -->
+
+        <video
+          class="sticky top-0 h-screen w-full opacity-70"
+          id="video"
+          autoplay
+          muted
+        >
+          <source src="eksperimentel-video.mp4" type="video/mp4" />
+        </video>
 
         <div class="">
           <h1 class="relative h-screen w-screen text-center text-3xl">
@@ -222,7 +231,7 @@
           Pierre tjente godt det følgende årti. Men stille og roligt begyndte
           billederne også at
         </p>
-        <p class="kvalme flicker-in-1 p-40 text-xl uppercase text-red-500">
+        <p class="kvalme flicker-in-1 p-40 text-xl uppercase">
           give ham kvalme.
         </p>
       </section>
@@ -236,7 +245,7 @@
       <section id="page_flip" class="sticky">
         <div class="videocontainer sticky top-1/4 w-1/2">
           <video
-            src="page_flip_bog.mp4"
+            src="page_flip_v6.mp4"
             muted
             playsinline
             class="w-full"
