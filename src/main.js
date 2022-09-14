@@ -48,7 +48,7 @@ document
     });
   });
 
-/* paralax 2*/
+/* parallax 2*/
 
 document
   .querySelectorAll(".parallaxcontainermedflereelementer2")
@@ -74,3 +74,21 @@ inView(".fotogalleryinview", ({ target }) => {
     { duration: 1, delay: stagger(1, { start: 0.25 }) }
   );
 });
+
+/* parallax 3*/
+
+document
+  .querySelectorAll(".parallaxcontainermedflereelementer3")
+  .forEach((parallaxcontainer) => {
+    /* element 5 (øverst til venstre)*/
+    const elementderskalparallaxes7 = parallaxcontainer.querySelector(".img7");
+    scroll(animate(elementderskalparallaxes7, { y: [0, 700] }), {
+      target: elementderskalparallaxes7,
+    });
+
+    /* element 6 (øverst til højre) */
+    const elementderskalparallaxes8 = parallaxcontainer.querySelector(".img8");
+    scroll(animate(elementderskalparallaxes8, { y: [0, 700] }), {
+      target: elementderskalparallaxes8,
+    });
+  });
