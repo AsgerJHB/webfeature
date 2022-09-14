@@ -92,3 +92,23 @@ document
       target: elementderskalparallaxes8,
     });
   });
+
+// citat_2
+inView(".citat_2", () => {
+  animate(".citat_2", { x: [-2000, 0] }, { duration: 1 });
+  animate(
+    ".citat_2",
+    { opacity: [0.4, 1] },
+    { delay: 1, duration: 2, direction: "alternate" }
+  );
+});
+
+// polaroids
+inView(".polaroid_section", () => {
+  animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3 });
+  animate(
+    ".polaroid_section",
+    { opacity: [0, 1] },
+    { delay: 1, duration: 5, direction: "alternate" }
+  );
+});
