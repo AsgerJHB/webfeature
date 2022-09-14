@@ -55,7 +55,7 @@
 
       <!-- Parallax sektion -->
       <section
-        class="parallaxcontainermedflereelementer ml-20 mr-20 grid grid-cols-3 gap-10 overflow-hidden pb-20 pt-20"
+        class="parallaxcontainermedflereelementer grid grid-cols-2 gap-10 overflow-hidden pb-20 pt-20 md:ml-20 md:mr-20 md:grid-cols-3"
       >
         <div>
           <img
@@ -64,31 +64,36 @@
             alt=""
           />
           <img class="img2 pt-20" src="img/godt-arbejde.webp" alt="" />
+          <img class="img5 md:hidden" src="img/kamera.webp" alt="" />
+          <img class="img6 pt-20 md:hidden" src="img/arbejde-2.webp" alt="" />
         </div>
 
         <div>
           <p class="pb-20 text-sm">
             Pierres interesse for foto startede som ganske ung
           </p>
-          <p class="leading-10">
+          <p class="text-xs leading-10">
             - som 10-årig fik han sin fars gamle Rollei-kamera, og begyndte at
             skyde løs. Det var før den digitale revolution, så alle Pierres
             lommepenge blev brugt på filmruller og fremkaldelse af film. Pierre
             fortsatte med at fotografere på film op gennem gymnasietiden.
           </p>
-          <p class="pt-20 leading-10">
+          <p class="pt-20 text-xs leading-10">
             Pierre gik over til digital fotografering i starten af 2000’erne, da
             han begyndte at studere fotografisk kommunikation på DMJX. Her
             åbnede en ny verden sig: Reklamefotografering i studie, lyssætning
-            og manipulering af billeder i Photoshop blev hans nye stil. På det
-            tidspunkt var stock-foto industrien i starten af en revolution: De
-            første online stock-foto websites begyndte at komme på markedet, men
-            de store, etablerede spillere på markedet holdt lidt igen.
+            og manipulering af billeder i Photoshop blev hans nye stil.
+          </p>
+          <p class="pt-20 text-xs leading-10">
+            På det tidspunkt var stock-foto industrien i starten af en
+            revolution: De første online stock-foto websites begyndte at komme
+            på markedet, men de store, etablerede spillere på markedet holdt
+            lidt igen.
           </p>
           <p class="pt-20 text-center text-sm">Pierre så det for sig:</p>
         </div>
 
-        <div>
+        <div class="">
           <img class="img3" src="img/kamera.webp" alt="" />
           <img class="img4 pt-20" src="img/arbejde-2.webp" alt="" />
         </div>
@@ -97,7 +102,7 @@
       <!-- pierre citat 1 -->
       <section class="">
         <img
-          class="sticky top-0 h-screen w-screen"
+          class="sticky top-0 h-screen w-fit md:h-screen md:w-screen"
           src="img/pierre-2.webp"
           alt=""
         />
@@ -143,15 +148,12 @@
       </section>
 
       <!-- Polaroid sektion -->
-      <section
-        id="polaroid_sektion"
-        class="polaroid_section h-screen w-screen pt-28"
-      >
+      <section class="h-screen w-screen pt-28">
         <h2 class="flex justify-center pb-20 text-center text-xl">
           3 hurtige om Pierres succes <br />
           som stock-fotograf
         </h2>
-        <div class="flex h-screen w-screen justify-around">
+        <div class="polaroid_section flex h-screen w-screen justify-around">
           <div
             class="polaroid shake-bl grid h-80 w-56 place-items-center bg-slate-100 shadow-black drop-shadow-lg"
           >
@@ -224,10 +226,10 @@
 
       <!-- Glitch sektion / sektion 3 -->
       <section class="bg-glitch_baggrund">
-        <!-- horisontal scrolling -->
-        <article class="grid grid-cols-3">
-          <div class="col-start-1">
-            <p class="justify-center p-10 leading-10 text-white">
+        <h2 class="pt-20 text-center text-xl text-white">En ny begyndelse</h2>
+        <article class="grid grid-cols-2 grid-rows-3">
+          <div class="mt-20 ml-20">
+            <p class="w-4/5 text-xs leading-10 text-white">
               Han kunne ikke holde sit eget arbejde ud, og måtte finde et
               modsvar til alle de blankpolerede fotos. Noget han kunne lave med
               stolthed. Pierre besluttede sig for at droppe stock-fotos, og
@@ -235,9 +237,9 @@
             </p>
           </div>
 
-          <div class="col-start-2 ml-20 mr-20 gap-10 pb-20 pt-20">
+          <div class="col-start-2 row-start-2 mr-20">
             <div>
-              <p class="pb-10 leading-10 text-white">
+              <p class="w-4/5 leading-10 text-white">
                 Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
                 Glitch art og polaroid fotografering, og begyndte stille og
                 roligt at skabe sig en ny stil - en stil med fokus på det
@@ -246,7 +248,7 @@
               </p>
             </div>
 
-            <div class="fotogalleryinview grid grid-cols-4 gap-10">
+            <div class="fotogalleryinview mt-10 grid grid-cols-4 gap-5">
               <img src="img/tynd-film.webp" alt="" />
               <img src="img/lomo-smena-17-2.webp" alt="" />
               <img src="img/glitch.webp" alt="" />
@@ -254,8 +256,8 @@
             </div>
           </div>
 
-          <div class="col-start-3">
-            <p class="leading-10 text-white">
+          <div class="row-start-3 mt-10 ml-20">
+            <p class="w-4/5 leading-10 text-white">
               Pierre tog det endda så vidt at han ikke kun droppede at tage
               stock-fotos. Han fjernede også alle stock-fotos fra de tjenester,
               han solgte sine fotos hos. Han gik fra at være en god
@@ -298,34 +300,64 @@
         </article>
 
         <!-- pierre citat 2 -->
-        <article>
-          <img
-            class="sticky top-0 h-screen w-screen"
-            src="img/pierre-2.webp"
-            alt=""
-          />
+        <article class="citat_2 pb-20">
+          <div id="pierrecitat_2" class="citat_artikel relative">
+            <div class="text-center">
+              <img
+                class="ml-auto mr-auto block w-1/2"
+                src="img/groen_pierre.webp"
+                alt=""
+              />
+            </div>
 
-          <div class="relative grid bg-slate-600 opacity-90">
-            <h2 class="my-20 text-center text-lg text-white">
-              “Om ganske få år er hele branchen digital, og dem der ikke hopper
-              med på den digitale vogn, lukker.”
-            </h2>
+            <div class="left-1/2">
+              <h2
+                class="absolute top-10 left-80 w-1/2 text-center text-lg text-white"
+              >
+                “Om ganske få år er hele branchen digital, og dem der ikke
+                hopper med på den digitale vogn, lukker.”
+              </h2>
+            </div>
           </div>
         </article>
-      </section>
 
-      <!-- Page_flip sektion -->
-      <section class="sticky">
-        <div class="videocontainer sticky top-1/4 w-full">
-          <video
-            src="page_flip_bog.mp4"
-            muted
-            playsinline
-            class="w-1/2"
-            id="videofil"
-          ></video>
-        </div>
-        <div class="videoarticle h-screen"></div>
+        <!-- sidste tekst -->
+        <article class="grid grid-cols-3 pt-5 pb-20">
+          <p
+            class="pb-10text-center col-start-2 pb-10 text-sm leading-10 text-white"
+          >
+            Karrieren begynder også så småt også at gå den rette vej:
+          </p>
+          <p class="col-start-2 leading-10 text-white">
+            Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin
+            første foto-bog med titlen <b> “Lidt i fem” </b> som er en
+            fotografisk odyssé om at slæbe en brandert hjem i de tidlige
+            morgentimer. I forbindelse med udgivelsen af bogen, har han en
+            udstilling på vej i det Kongelige Biblioteks fotoudstilling.
+          </p>
+          <p
+            class="col-start-2 pt-20 text-center text-sm leading-10 text-white"
+          >
+            Se et lille udklip af bogen nedenfor!
+          </p>
+          <p class="col-start-2 pt-10 text-center leading-10 text-white">
+            Bogen kan købes på www.pierrefalcke.com
+          </p>
+        </article>
+        <article class="sticky">
+          <div
+            class="videocontainer sticky top-1/4 flex w-full items-center justify-center"
+          >
+            <video
+              src="bog_video2.mp4"
+              muted
+              playsinline
+              class="w-1/2"
+              id="videofil"
+            ></video>
+          </div>
+          <div class="videoarticle h-screen"></div>
+        </article>
       </section>
 
       <div

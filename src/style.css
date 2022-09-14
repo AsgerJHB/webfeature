@@ -110,6 +110,7 @@
 .shake-bl {
   -webkit-animation: shake-bl 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   animation: shake-bl 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation-delay: 2s;
 }
 
 /* glitch text */

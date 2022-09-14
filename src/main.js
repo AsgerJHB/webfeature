@@ -2,6 +2,7 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
+// Video i sidste sektion
 const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
 
@@ -16,10 +17,10 @@ scroll(
   }
 );
 
+// Progress bar
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
 /* paralax */
-
 document
   .querySelectorAll(".parallaxcontainermedflereelementer")
   .forEach((parallaxcontainer) => {
@@ -37,14 +38,26 @@ document
 
     /* element 3 (øverst til højre)*/
     const elementderskalparallaxes3 = parallaxcontainer.querySelector(".img3");
-    scroll(animate(elementderskalparallaxes3, { y: [0, 700] }), {
+    scroll(animate(elementderskalparallaxes3, { y: [0, 1000] }), {
       target: elementderskalparallaxes3,
     });
 
     /* element 4 (nederst til højre) */
     const elementderskalparallaxes4 = parallaxcontainer.querySelector(".img4");
-    scroll(animate(elementderskalparallaxes4, { y: [0, 700] }), {
+    scroll(animate(elementderskalparallaxes4, { y: [0, 1000] }), {
       target: elementderskalparallaxes4,
+    });
+
+    /* element 5 (nederst til højre) */
+    const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
+    scroll(animate(elementderskalparallaxes5, { y: [0, 1000] }), {
+      target: elementderskalparallaxes5,
+    });
+
+    /* element 6 (nederst til højre) */
+    const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
+    scroll(animate(elementderskalparallaxes6, { y: [0, 1000] }), {
+      target: elementderskalparallaxes6,
     });
   });
 
@@ -92,3 +105,38 @@ document
       target: elementderskalparallaxes8,
     });
   });
+
+// citat_2
+// inView(".citat_2", () => {
+//   animate(".citat_2", { x: [-2000, 0] }, { duration: 1 });
+//   animate(
+//     ".citat_2",
+//     { opacity: [0.4, 1] },
+//     { delay: 1, duration: 2, direction: "alternate" }
+//   );
+// });
+
+// polaroids
+inView(".polaroid_section", () => {
+  animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3 });
+  animate(
+    ".polaroid_section",
+    { opacity: [0, 1] },
+    { delay: 1, duration: 5, direction: "alternate" }
+  );
+});
+
+// citat
+
+const andetcitat = document.querySelector("#pierrecitat_2");
+
+scroll(
+  ({ x }) => {
+    if (!andetcitat.readyState) return;
+    andetcitat.currentTime = andetcitat.duration * x.progress;
+  },
+  {
+    target: document.querySelector(".citat_artikel"),
+    offset: ["-100vh", "end end"],
+  }
+);
