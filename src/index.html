@@ -55,7 +55,7 @@
 
       <!-- Parallax sektion -->
       <section
-        class="parallaxcontainermedflereelementer ml-20 mr-20 grid grid-cols-3 gap-10 overflow-hidden pb-20 pt-20"
+        class="parallaxcontainermedflereelementer grid grid-cols-2 gap-10 overflow-hidden pb-20 pt-20 md:ml-20 md:mr-20 md:grid-cols-3"
       >
         <div>
           <img
@@ -64,31 +64,36 @@
             alt=""
           />
           <img class="img2 pt-20" src="img/godt-arbejde.webp" alt="" />
+          <img class="img5 md:hidden" src="img/kamera.webp" alt="" />
+          <img class="img6 pt-20 md:hidden" src="img/arbejde-2.webp" alt="" />
         </div>
 
         <div>
           <p class="pb-20 text-sm">
             Pierres interesse for foto startede som ganske ung
           </p>
-          <p class="leading-10">
+          <p class="text-xs leading-10">
             - som 10-årig fik han sin fars gamle Rollei-kamera, og begyndte at
             skyde løs. Det var før den digitale revolution, så alle Pierres
             lommepenge blev brugt på filmruller og fremkaldelse af film. Pierre
             fortsatte med at fotografere på film op gennem gymnasietiden.
           </p>
-          <p class="pt-20 leading-10">
+          <p class="pt-20 text-xs leading-10">
             Pierre gik over til digital fotografering i starten af 2000’erne, da
             han begyndte at studere fotografisk kommunikation på DMJX. Her
             åbnede en ny verden sig: Reklamefotografering i studie, lyssætning
-            og manipulering af billeder i Photoshop blev hans nye stil. På det
-            tidspunkt var stock-foto industrien i starten af en revolution: De
-            første online stock-foto websites begyndte at komme på markedet, men
-            de store, etablerede spillere på markedet holdt lidt igen.
+            og manipulering af billeder i Photoshop blev hans nye stil.
+          </p>
+          <p class="pt-20 text-xs leading-10">
+            På det tidspunkt var stock-foto industrien i starten af en
+            revolution: De første online stock-foto websites begyndte at komme
+            på markedet, men de store, etablerede spillere på markedet holdt
+            lidt igen.
           </p>
           <p class="pt-20 text-center text-sm">Pierre så det for sig:</p>
         </div>
 
-        <div>
+        <div class="">
           <img class="img3" src="img/kamera.webp" alt="" />
           <img class="img4 pt-20" src="img/arbejde-2.webp" alt="" />
         </div>
@@ -97,7 +102,7 @@
       <!-- pierre citat 1 -->
       <section class="">
         <img
-          class="sticky top-0 h-screen w-screen"
+          class="sticky top-0 h-screen w-fit md:h-screen md:w-screen"
           src="img/pierre-2.webp"
           alt=""
         />
@@ -368,9 +373,11 @@
 
       <!-- Page_flip sektion -->
       <section class="sticky">
-        <div class="videocontainer sticky top-1/4 w-full">
+        <div
+          class="videocontainer sticky top-1/4 flex w-full items-center justify-center bg-glitch_baggrund"
+        >
           <video
-            src="page_flip_bog.mp4"
+            src="bog_video2.mp4"
             muted
             playsinline
             class="w-1/2"
