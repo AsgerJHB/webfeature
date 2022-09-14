@@ -107,14 +107,14 @@ document
   });
 
 // citat_2
-inView(".citat_2", () => {
-  animate(".citat_2", { x: [-2000, 0] }, { duration: 1 });
-  animate(
-    ".citat_2",
-    { opacity: [0.4, 1] },
-    { delay: 1, duration: 2, direction: "alternate" }
-  );
-});
+// inView(".citat_2", () => {
+//   animate(".citat_2", { x: [-2000, 0] }, { duration: 1 });
+//   animate(
+//     ".citat_2",
+//     { opacity: [0.4, 1] },
+//     { delay: 1, duration: 2, direction: "alternate" }
+//   );
+// });
 
 // polaroids
 inView(".polaroid_section", () => {
@@ -125,3 +125,18 @@ inView(".polaroid_section", () => {
     { delay: 1, duration: 5, direction: "alternate" }
   );
 });
+
+// citat
+
+const andetcitat = document.querySelector("#pierrecitat_2");
+
+scroll(
+  ({ x }) => {
+    if (!andetcitat.readyState) return;
+    andetcitat.currentTime = andetcitat.duration * x.progress;
+  },
+  {
+    target: document.querySelector(".citat_artikel"),
+    offset: ["-100vh", "end end"],
+  }
+);
