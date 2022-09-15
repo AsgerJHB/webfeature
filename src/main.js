@@ -92,16 +92,21 @@ inView(".fotogalleryinview", ({ target }) => {
 document
   .querySelectorAll(".parallaxcontainermedflereelementer3")
   .forEach((parallaxcontainer) => {
-    /* element 5 (øverst til venstre)*/
+    /* element 7 (øverst til venstre)*/
     const elementderskalparallaxes7 = parallaxcontainer.querySelector(".img7");
     scroll(animate(elementderskalparallaxes7, { y: [0, 700] }), {
       target: elementderskalparallaxes7,
     });
 
-    /* element 6 (øverst til højre) */
+    /* element 8 (øverst til højre) */
     const elementderskalparallaxes8 = parallaxcontainer.querySelector(".img8");
     scroll(animate(elementderskalparallaxes8, { y: [0, 700] }), {
       target: elementderskalparallaxes8,
+    });
+    /* element 9 (øverst til højre) */
+    const elementderskalparallaxes9 = parallaxcontainer.querySelector(".img9");
+    scroll(animate(elementderskalparallaxes9, { y: [0, 700] }), {
+      target: elementderskalparallaxes9,
     });
   });
 

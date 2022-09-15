@@ -12,6 +12,7 @@ module.exports = {
     },
     fontSize: {
       //brødtekster
+      mobilebread: "0.58rem",
       teenytiny: "0.5rem",
       tiny: "0.618rem",
       xs: "1rem",
@@ -19,6 +20,7 @@ module.exports = {
       lg: "2.618rem",
 
       // overskrifter
+      mobilehead: "1.3rem",
       xl: "4.236rem",
       "2xl": "6.854rem",
       "3xl": "11.089rem",
