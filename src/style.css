@@ -8,7 +8,8 @@
   h3 {
     font-family: "Reenie Beanie", cursive;
   }
-  p {
+  p,
+  a {
     font-family: "Playfair Display", serif;
   }
 }
