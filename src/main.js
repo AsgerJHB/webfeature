@@ -135,7 +135,7 @@ scroll(
 // zoom på citat
 scroll(
   animate("#citat1", {
-    scale: [1, 1.5],
+    scale: [1, 1.2],
   }),
   {
     target: document.querySelector("#citat1"),
