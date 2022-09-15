@@ -110,8 +110,8 @@ inView(".polaroid_section", () => {
   animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3 });
   animate(
     ".polaroid_section",
-    { opacity: [0, 1] },
-    { delay: 1, duration: 5, direction: "alternate" }
+    { opacity: [0, 1], delay: 1 },
+    { delay: 0, duration: 5, direction: "alternate" }
   );
 });
 
