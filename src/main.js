@@ -18,6 +18,22 @@ scroll(
   }
 );
 
+// Filmrulle video - glitch
+const filmvideo = document.querySelector("#videofil2");
+filmvideo.pause();
+
+scroll(
+  ({ y }) => {
+    console.log(y);
+    if (!filmvideo.readyState) return;
+    filmvideo.currentTime = filmvideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle2"),
+    offset: ["-100vh", "end end"],
+  }
+);
+
 // Progress bar
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
