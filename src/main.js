@@ -62,7 +62,6 @@ document
   });
 
 /* parallax 2*/
-
 document
   .querySelectorAll(".parallaxcontainermedflereelementer2")
   .forEach((parallaxcontainer) => {
@@ -89,7 +88,6 @@ inView(".fotogalleryinview", ({ target }) => {
 });
 
 /* parallax 3*/
-
 document
   .querySelectorAll(".parallaxcontainermedflereelementer3")
   .forEach((parallaxcontainer) => {
@@ -127,7 +125,6 @@ inView(".polaroid_section", () => {
 });
 
 // citat
-
 const andetcitat = document.querySelector("#pierrecitat_2");
 
 scroll(
