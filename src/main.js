@@ -34,6 +34,22 @@ scroll(
   }
 );
 
+// Filmrulle video - stock
+const filmvideo2 = document.querySelector("#videofil3");
+filmvideo2.pause();
+
+scroll(
+  ({ y }) => {
+    console.log(y);
+    if (!filmvideo2.readyState) return;
+    filmvideo2.currentTime = filmvideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle3"),
+    offset: ["-100vh", "end end"],
+  }
+);
+
 // Progress bar
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
