@@ -267,7 +267,7 @@
 
       <!-- start på glitch -->
       <section
-        class="flex h-screen w-screen flex-col items-center justify-evenly p-20 pt-20"
+        class="flex h-screen w-screen flex-col items-center justify-evenly pt-20 md:p-20"
       >
         <p class="text-center leading-10">
           Pierre tjente godt det følgende årti. Men stille og roligt begyndte
@@ -281,7 +281,7 @@
       </section>
 
       <!-- Glitch sektion / sektion 3 -->
-      <section class="bg-glitch_baggrund p-20">
+      <section class="bg-glitch_baggrund md:p-20">
         <h2 class="pt-10 text-center text-xl text-white">En ny begyndelse</h2>
 
         <!-- stagging -->
@@ -377,10 +377,10 @@
 
         <!-- parallax sektion 3 -->
         <article
-          class="parallaxcontainermedflereelementer3 grid grid-cols-3 gap-10 pb-20 pt-20"
+          class="parallaxcontainermedflereelementer3 grid md:grid-cols-3 md:gap-10 md:pb-20 md:pt-20"
         >
-          <div>
-            <img class="img7" src="img/bygning.webp" alt="" />
+          <div class="">
+            <img class="img7 hidden md:block" src="img/bygning.webp" alt="" />
           </div>
 
           <div>
@@ -393,13 +393,14 @@
               glæder sig over hver dags kunstneriske eksperimenter, og er for
               første gang i sit liv rigtig stolt af sit arbejde.
             </p>
-            <p class="pt-20 text-center text-sm text-white">
+            <p class="pt-20 text-sm text-white md:text-center">
               Som han selv udtrykker det:
             </p>
           </div>
 
           <div>
             <img class="img8" src="img/penge.webp" alt="" />
+            <img class="img9 md:hidden" src="img/bygning.webp" alt="" />
           </div>
         </article>
 
@@ -443,11 +444,11 @@
         <!-- sidste tekst -->
         <article class="md:grid md:grid-cols-3 md:pb-20">
           <p
-            class="text-white md:col-start-2 md:pb-10 md:text-center md:text-sm md:leading-10"
+            class="pl-2 pb-1 text-mobilehead text-white md:col-start-2 md:pb-10 md:text-center md:text-sm md:leading-10"
           >
             Karrieren begynder også så småt også at gå den rette vej:
           </p>
-          <p class="text-white md:col-start-2 md:leading-10">
+          <p class="pl-2 text-xs text-white md:col-start-2 md:leading-10">
             Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin
             første foto-bog med titlen <b> “Lidt i fem” </b> som er en
             fotografisk odyssé om at slæbe en brandert hjem i de tidlige
@@ -455,19 +456,19 @@
             udstilling på vej i det Kongelige Biblioteks fotoudstilling.
           </p>
           <p
-            class="text-white md:col-start-2 md:pt-20 md:text-center md:text-sm md:leading-10"
+            class="pl-2 pt-4 text-white md:col-start-2 md:pt-20 md:text-center md:text-sm md:leading-10"
           >
             Se et lille udklip af bogen nedenfor!
           </p>
           <div
-            class="col-start-2 pt-10 text-xs leading-10 text-white md:text-center"
+            class="col-start-2 pl-2 pt-10 text-xs leading-10 text-white md:text-center"
           >
-            <p>Bogen kan købes på -</p>
+            <p>Bogen kan købes her</p>
             <a
               href="#_"
-              class="mb-3 mb-0 w-full w-auto cursor-mincursor items-center rounded-md bg-purple-500 py-3 px-6 text-center text-xs text-white hover:bg-purple-700"
+              class="mb-3 mb-0 w-full w-auto cursor-mincursor items-center rounded-md bg-purple-500 py-3 px-6 text-center text-white hover:bg-purple-700 md:text-xs"
             >
-              www.pierrefalcke.com
+              Udforsk Lidt i fem
               <!-- <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="ml-1 h-5 w-5"
@@ -486,9 +487,9 @@
         </article>
 
         <!-- lidt i fem bog -->
-        <article class="sticky mt-9">
+        <article class="sticky mt-9 px-2">
           <div
-            class="videocontainer sticky top-1/4 flex w-full items-center justify-center"
+            class="videocontainer sticky md:top-1/4 md:flex md:w-full md:items-center md:justify-center"
           >
             <video
               src="bog_video2.mp4"
@@ -498,7 +499,7 @@
               id="videofil"
             ></video>
           </div>
-          <div class="videoarticle h-screen"></div>
+          <div class="videoarticle h-9 md:h-screen"></div>
         </article>
       </section>
 
