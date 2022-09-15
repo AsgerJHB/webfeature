@@ -116,7 +116,7 @@
 /* glitch text */
 
 .flicker-3 {
-  -webkit-animation: flicker-3 3s linear infinite both;
+  -webkit-animation: flicker-3 1s linear infinite both;
   animation: flicker-3 3s linear infinite both;
 }
 

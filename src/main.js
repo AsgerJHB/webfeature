@@ -127,17 +127,11 @@ inView(".polaroid_section", () => {
   );
 });
 
-// citat
-
-const andetcitat = document.querySelector("#pierrecitat_2");
-
+// citat med horisontal scrolling
+const items = document.querySelectorAll("#horisontalliste li");
 scroll(
-  ({ x }) => {
-    if (!andetcitat.readyState) return;
-    andetcitat.currentTime = andetcitat.duration * x.progress;
-  },
-  {
-    target: document.querySelector(".citat_artikel"),
-    offset: ["-100vh", "end end"],
-  }
+  animate("#horisontalliste", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horisontalscrollsection") }
 );
