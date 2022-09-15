@@ -7,8 +7,12 @@ module.exports = {
         glitch_baggrund: "url('img/glitch_baggrund.webp')",
       },
     },
+    cursor: {
+      mincursor: "url(img/cursor.png) 25 25, pointer",
+    },
     fontSize: {
       //brødtekster
+      teenytiny: "0.5rem",
       tiny: "0.618rem",
       xs: "1rem",
       sm: "1.618rem",

@@ -435,13 +435,13 @@
         </article>
 
         <!-- sidste tekst -->
-        <article class="grid grid-cols-3 pb-20">
+        <article class="md:grid md:grid-cols-3 md:pb-20">
           <p
-            class="pb-10text-center col-start-2 pb-10 text-sm leading-10 text-white"
+            class="text-white md:col-start-2 md:pb-10 md:text-center md:text-sm md:leading-10"
           >
             Karrieren begynder også så småt også at gå den rette vej:
           </p>
-          <p class="col-start-2 leading-10 text-white">
+          <p class="text-white md:col-start-2 md:leading-10">
             Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin
             første foto-bog med titlen <b> “Lidt i fem” </b> som er en
             fotografisk odyssé om at slæbe en brandert hjem i de tidlige
@@ -449,17 +449,38 @@
             udstilling på vej i det Kongelige Biblioteks fotoudstilling.
           </p>
           <p
-            class="col-start-2 pt-20 text-center text-sm leading-10 text-white"
+            class="text-white md:col-start-2 md:pt-20 md:text-center md:text-sm md:leading-10"
           >
             Se et lille udklip af bogen nedenfor!
           </p>
-          <p class="col-start-2 pt-10 text-center leading-10 text-white">
-            Bogen kan købes på www.pierrefalcke.com
-          </p>
+          <div
+            class="col-start-2 pt-10 text-xs leading-10 text-white md:text-center"
+          >
+            <p>Bogen kan købes på -</p>
+            <a
+              href="#_"
+              class="mb-3 mb-0 w-full w-auto cursor-mincursor items-center rounded-md bg-purple-500 py-3 px-6 text-center text-xs text-white hover:bg-purple-700"
+            >
+              www.pierrefalcke.com
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-1 h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg> -->
+            </a>
+          </div>
         </article>
 
         <!-- lidt i fem bog -->
-        <article class="sticky">
+        <article class="sticky mt-9">
           <div
             class="videocontainer sticky top-1/4 flex w-full items-center justify-center"
           >
@@ -467,7 +488,7 @@
               src="bog_video2.mp4"
               muted
               playsinline
-              class="w-1/2 shadow-lg shadow-slate-400"
+              class="shadow-lg shadow-slate-400 md:w-1/2"
               id="videofil"
             ></video>
           </div>
@@ -481,7 +502,7 @@
       ></div>
     </main>
 
-    <footer class="flex gap-20 p-10 text-tiny">
+    <footer class="flex gap-5 p-10 text-teenytiny text-tiny md:gap-20">
       <p>Københavns Erhvervsakademi</p>
       <p>MMD, Digital Design</p>
       <p>Louise Traberg, Asger Helle-Broe & Julie Jakobsen</p>
