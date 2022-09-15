@@ -18,8 +18,8 @@
       rel="stylesheet"
     />
   </head>
-  <body class="grid place-items-center bg-zinc-300">
-    <main>
+  <body class="grid place-items-center scroll-smooth bg-slate-200">
+    <main class="container overflow-clip">
       <!-- Autoplay video sektion -->
       <section id="hero_sektion" class="">
         <video class="sticky top-0 opacity-70" id="video" autoplay muted loop>
@@ -34,12 +34,13 @@
             Du ved formentligt ikke hvem han er.
           </p>
           <p class="relative h-screen w-screen text-center text-sm">
-            Men indtil for kort tid siden, så du hans værker et par gange om
-            dagen, hver dag, året rundt.
+            Men indtil for kort tid siden, så du hans værker <br />
+            et par gange om dagen, hver dag, året rundt.
           </p>
           <p class="relative h-screen w-screen text-center text-sm">
-            Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og
-            han solgte over 2 millioner fotos om året.
+            Pierre Falcke var en af verdens bedst sælgende stock-fotografer,
+            <br />
+            og han solgte over 2 millioner fotos om året.
           </p>
           <p class="relative h-screen w-screen text-center text-sm">
             Men Pierre kunne ikke drømme om at bruge sine egne fotos.
@@ -47,7 +48,9 @@
           <p class="relative h-screen w-screen text-center text-sm">
             faktisk kan han ikke fordrage sit eget arbejde.
           </p>
-          <h1 class="sticky h-screen w-screen text-center text-2xl">
+          <h1
+            class="kvalme flicker-3 sticky h-screen w-screen bg-gradient-to-r from-red-500 via-lime-600 to-blue-700 bg-clip-text p-40 text-center text-2xl uppercase text-transparent"
+          >
             Uperfekt perfekt
           </h1>
         </div>
@@ -105,17 +108,23 @@
 
       <!-- pierre citat 1 -->
       <section class="">
-        <img
-          class="sticky top-0 h-screen w-fit md:h-screen md:w-screen"
-          src="img/pierre-2.webp"
-          alt=""
-        />
+        <div id="pierrecitat_2" class="citat_artikel relative">
+          <div class="text-center">
+            <img
+              class="ml-auto mr-auto block w-1/2"
+              src="img/groen_pierre.webp"
+              alt=""
+            />
+          </div>
 
-        <div class="relative grid bg-slate-600 opacity-90">
-          <h2 class="my-20 text-center text-lg text-white">
-            “Om ganske få år er hele branchen digital, og dem der ikke hopper
-            med på den digitale vogn, lukker.”
-          </h2>
+          <div class="left-1/2">
+            <h2
+              class="absolute top-10 left-80 w-1/2 text-center text-lg text-white"
+            >
+              “Om ganske få år er hele branchen digital, og dem der ikke hopper
+              med på den digitale vogn, lukker.”
+            </h2>
+          </div>
         </div>
       </section>
 
@@ -192,7 +201,20 @@
         </div>
       </section>
 
+      <article>
+        <h2 class="flex justify-center pt-48 text-center text-xl">
+          Men hvad er stock-fotos egentlig?
+        </h2>
+      </article>
+
       <!-- Filmrulle sektion -->
+      <section id="filmrulle_1" class="mx-20 pt-28">
+        <article>
+          <h2 class="flex justify-center pt-28 pb-28 text-center text-xl">
+            Men hvad er stock-fotos egentlig?
+          </h2>
+        </article>
+
       <section id="filmrulle_1" class="mx-20 my-20">
         <div class="sticky top-0 left-0 h-screen w-1/2 overflow-hidden">
           <img src="img/filmrulle.svg" alt="" />
@@ -228,12 +250,35 @@
         </div>
       </section>
 
+      <!-- start på glitch -->
+      <section class="grid place-content-center">
+        <p>
+
+      <section class="grid place-content-center p-20 pt-48">
+        <p class="text-center">
+
+          Pierre tjente godt det følgende årti. Men stille og roligt begyndte
+          billederne også at
+        </p>
+        <p
+
+          class="kvalme flicker-3 bg-gradient-to-r from-red-500 via-lime-600 to-blue-700 bg-clip-text p-40 text-xl uppercase text-transparent"
+
+         
+
+        >
+          give ham kvalme.
+        </p>
+      </section>
+
       <!-- Glitch sektion / sektion 3 -->
-      <section class="bg-glitch_baggrund">
-        <h2 class="pt-20 text-center text-xl text-white">En ny begyndelse</h2>
+      <section class="bg-glitch_baggrund p-20">
+        <h2 class="pt-10 text-center text-xl text-white">En ny begyndelse</h2>
+
+        <!-- stagging -->
         <article class="grid grid-cols-2 grid-rows-3">
-          <div class="mt-20 ml-20">
-            <p class="w-4/5 text-xs leading-10 text-white">
+          <div class="mt-20">
+            <p class="text-xs leading-10 text-white">
               Han kunne ikke holde sit eget arbejde ud, og måtte finde et
               modsvar til alle de blankpolerede fotos. Noget han kunne lave med
               stolthed. Pierre besluttede sig for at droppe stock-fotos, og
@@ -241,9 +286,9 @@
             </p>
           </div>
 
-          <div class="col-start-2 row-start-2 mr-20">
+          <div class="col-start-2 row-start-2">
             <div>
-              <p class="w-4/5 leading-10 text-white">
+              <p class="leading-10 text-white">
                 Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
                 Glitch art og polaroid fotografering, og begyndte stille og
                 roligt at skabe sig en ny stil - en stil med fokus på det
@@ -260,8 +305,8 @@
             </div>
           </div>
 
-          <div class="row-start-3 mt-10 ml-20">
-            <p class="w-4/5 leading-10 text-white">
+          <div class="row-start-3 mt-10">
+            <p class="leading-10 text-white">
               Pierre tog det endda så vidt at han ikke kun droppede at tage
               stock-fotos. Han fjernede også alle stock-fotos fra de tjenester,
               han solgte sine fotos hos. Han gik fra at være en god
@@ -273,7 +318,7 @@
 
         <!-- parallax sektion 3 -->
         <article
-          class="parallaxcontainermedflereelementer3 ml-20 mr-20 grid grid-cols-3 gap-10 pb-20 pt-20"
+          class="parallaxcontainermedflereelementer3 grid grid-cols-3 gap-10 pb-20 pt-20"
         >
           <div>
             <img class="img7" src="img/pexels-pixabay-259165.webp" alt="" />
@@ -304,25 +349,40 @@
         </article>
 
         <!-- pierre citat 2 -->
-        <article class="citat_2 pb-20">
-          <div id="pierrecitat_2" class="citat_artikel relative">
-            <div class="text-center">
-              <img
-                class="ml-auto mr-auto block w-1/2"
-                src="img/groen_pierre.webp"
-                alt=""
-              />
-            </div>
 
-            <div class="left-1/2">
-              <h2
-                class="absolute top-10 left-80 w-1/2 text-center text-lg text-white"
+        <article id="horisontalscrollsection" class="relative h-[150vh]">
+          <ul id="horisontalliste" class="sticky top-0 flex list-none">
+            <li
+              class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+            ></li>
+            <li
+              class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
+            >
+              <div
+                id="pierrecitat_2"
+                class="citat_artikel relative h-[400px] w-[600px]"
               >
-                “Om ganske få år er hele branchen digital, og dem der ikke
-                hopper med på den digitale vogn, lukker.”
-              </h2>
-            </div>
-          </div>
+                <div class="text-center">
+                  <img
+                    class="ml-auto mr-auto block"
+                    src="img/groen_pierre.webp"
+                    alt=""
+                  />
+                </div>
+
+                <div class="left-1/2">
+                  <h2
+                    class="absolute top-6 left-36 w-1/2 text-center text-sm text-white"
+                  >
+                    “Det interessante ligger i fejlen. Et foto med masser af
+                    fejl er interessant. Jeg eksperimenterer med udstyr og
+                    teknik, og skaber nye visuelle udtryk. Det uperfekte er
+                    perfekt.”
+                  </h2>
+                </div>
+              </div>
+            </li>
+          </ul>
         </article>
 
         <!-- sidste tekst -->
@@ -348,6 +408,8 @@
             Bogen kan købes på www.pierrefalcke.com
           </p>
         </article>
+
+        <!-- lidt i fem bog -->
         <article class="sticky">
           <div
             class="videocontainer sticky top-1/4 flex w-full items-center justify-center"
@@ -370,7 +432,7 @@
       ></div>
     </main>
 
-    <footer class="mb-10 flex gap-20 text-tiny">
+    <footer class="flex gap-20 p-10 text-tiny">
       <p>Københavns Erhvervsakademi</p>
       <p>MMD, Digital Design</p>
       <p>Louise Traberg, Asger Helle-Broe & Julie Jakobsen</p>
