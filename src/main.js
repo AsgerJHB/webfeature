@@ -68,13 +68,13 @@ document
   .forEach((parallaxcontainer) => {
     /* element 5 (øverst til venstre)*/
     const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
-    scroll(animate(elementderskalparallaxes5, { y: [130, 500] }), {
+    scroll(animate(elementderskalparallaxes5, { y: [0, 200] }), {
       target: elementderskalparallaxes5,
     });
 
     /* element 6 (øverst til højre) */
     const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
-    scroll(animate(elementderskalparallaxes6, { y: [0, 500] }), {
+    scroll(animate(elementderskalparallaxes6, { y: [0, 200] }), {
       target: elementderskalparallaxes6,
     });
   });
