@@ -18,6 +18,22 @@ scroll(
   }
 );
 
+// Filmrulle video - glitch
+const filmvideo = document.querySelector("#videofil2");
+filmvideo.pause();
+
+scroll(
+  ({ y }) => {
+    console.log(y);
+    if (!filmvideo.readyState) return;
+    filmvideo.currentTime = filmvideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle2"),
+    offset: ["-100vh", "end end"],
+  }
+);
+
 // Progress bar
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
@@ -68,13 +84,13 @@ document
   .forEach((parallaxcontainer) => {
     /* element 5 (øverst til venstre)*/
     const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
-    scroll(animate(elementderskalparallaxes5, { y: [130, 500] }), {
+    scroll(animate(elementderskalparallaxes5, { y: [120, 500] }), {
       target: elementderskalparallaxes5,
     });
 
     /* element 6 (øverst til højre) */
     const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
-    scroll(animate(elementderskalparallaxes6, { y: [0, 500] }), {
+    scroll(animate(elementderskalparallaxes6, { y: [0, 300] }), {
       target: elementderskalparallaxes6,
     });
   });
