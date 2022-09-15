@@ -27,37 +27,37 @@ document
   .forEach((parallaxcontainer) => {
     /*eleement 1 (øverst til venstre) */
     const elementderskalparallaxes1 = parallaxcontainer.querySelector(".img1");
-    scroll(animate(elementderskalparallaxes1, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes1, { y: [50, 500] }), {
       target: elementderskalparallaxes1,
     });
 
     /* element 2 (nederst til venstre)*/
     const elementderskalparallaxes2 = parallaxcontainer.querySelector(".img2");
-    scroll(animate(elementderskalparallaxes2, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes2, { y: [50, 500] }), {
       target: elementderskalparallaxes2,
     });
 
     /* element 3 (øverst til højre)*/
     const elementderskalparallaxes3 = parallaxcontainer.querySelector(".img3");
-    scroll(animate(elementderskalparallaxes3, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes3, { y: [50, 500] }), {
       target: elementderskalparallaxes3,
     });
 
     /* element 4 (nederst til højre) */
     const elementderskalparallaxes4 = parallaxcontainer.querySelector(".img4");
-    scroll(animate(elementderskalparallaxes4, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes4, { y: [50, 500] }), {
       target: elementderskalparallaxes4,
     });
 
     /* element 5 (nederst til højre) */
     const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
-    scroll(animate(elementderskalparallaxes5, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes5, { y: [50, 500] }), {
       target: elementderskalparallaxes5,
     });
 
     /* element 6 (nederst til højre) */
     const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
-    scroll(animate(elementderskalparallaxes6, { y: [200, 900] }), {
+    scroll(animate(elementderskalparallaxes6, { y: [50, 500] }), {
       target: elementderskalparallaxes6,
     });
   });
