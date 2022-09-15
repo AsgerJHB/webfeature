@@ -27,37 +27,37 @@ document
   .forEach((parallaxcontainer) => {
     /*eleement 1 (øverst til venstre) */
     const elementderskalparallaxes1 = parallaxcontainer.querySelector(".img1");
-    scroll(animate(elementderskalparallaxes1, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes1, { y: [200, 900] }), {
       target: elementderskalparallaxes1,
     });
 
     /* element 2 (nederst til venstre)*/
     const elementderskalparallaxes2 = parallaxcontainer.querySelector(".img2");
-    scroll(animate(elementderskalparallaxes2, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes2, { y: [200, 900] }), {
       target: elementderskalparallaxes2,
     });
 
     /* element 3 (øverst til højre)*/
     const elementderskalparallaxes3 = parallaxcontainer.querySelector(".img3");
-    scroll(animate(elementderskalparallaxes3, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes3, { y: [200, 900] }), {
       target: elementderskalparallaxes3,
     });
 
     /* element 4 (nederst til højre) */
     const elementderskalparallaxes4 = parallaxcontainer.querySelector(".img4");
-    scroll(animate(elementderskalparallaxes4, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes4, { y: [200, 900] }), {
       target: elementderskalparallaxes4,
     });
 
     /* element 5 (nederst til højre) */
     const elementderskalparallaxes5 = parallaxcontainer.querySelector(".img5");
-    scroll(animate(elementderskalparallaxes5, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes5, { y: [200, 900] }), {
       target: elementderskalparallaxes5,
     });
 
     /* element 6 (nederst til højre) */
     const elementderskalparallaxes6 = parallaxcontainer.querySelector(".img6");
-    scroll(animate(elementderskalparallaxes6, { y: [0, 1000] }), {
+    scroll(animate(elementderskalparallaxes6, { y: [200, 900] }), {
       target: elementderskalparallaxes6,
     });
   });
@@ -105,16 +105,6 @@ document
     });
   });
 
-// citat_2
-// inView(".citat_2", () => {
-//   animate(".citat_2", { x: [-2000, 0] }, { duration: 1 });
-//   animate(
-//     ".citat_2",
-//     { opacity: [0.4, 1] },
-//     { delay: 1, duration: 2, direction: "alternate" }
-//   );
-// });
-
 // polaroids
 inView(".polaroid_section", () => {
   animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3 });
@@ -125,7 +115,7 @@ inView(".polaroid_section", () => {
   );
 });
 
-// citat
+// citat 2
 const andetcitat = document.querySelector("#pierrecitat_2");
 
 // citat med horisontal scrolling
@@ -135,4 +125,15 @@ scroll(
     transform: ["none", `translateX(-${items.length - 1}00vw)`],
   }),
   { target: document.querySelector("#horisontalscrollsection") }
+);
+
+// zoom på citat
+scroll(
+  animate("#citat1", {
+    scale: [1, 1.5],
+  }),
+  {
+    target: document.querySelector("#citat1"),
+    offset: ["1 1", "0.5 0.5"],
+  }
 );
