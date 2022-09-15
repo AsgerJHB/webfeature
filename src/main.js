@@ -8,6 +8,7 @@ lillevideo.pause();
 
 scroll(
   ({ y }) => {
+    console.log(y);
     if (!lillevideo.readyState) return;
     lillevideo.currentTime = lillevideo.duration * y.progress;
   },
