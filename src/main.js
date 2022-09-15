@@ -128,10 +128,10 @@ document
 
 // polaroids
 inView(".polaroid_section", () => {
-  animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3 });
+  animate(".polaroid_section", { x: [-2000, 0] }, { duration: 3, delay: 1 });
   animate(
     ".polaroid_section",
-    { opacity: [0, 1], delay: 1 },
+    { opacity: [0, 1], delay: 3 },
     { delay: 0, duration: 5, direction: "alternate" }
   );
 });
@@ -151,7 +151,7 @@ scroll(
 // zoom på citat
 scroll(
   animate("#citat1", {
-    scale: [1, 1.2],
+    scale: [0.8, 1.2],
   }),
   {
     target: document.querySelector("#citat1"),
