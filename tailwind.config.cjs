@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      cursor: {
+        mincursor: "url(img/haand.svg) 25 25, pointer",
+      },
       backgroundImage: {
         glitch_baggrund: "url('img/glitch_baggrund.webp')",
       },
