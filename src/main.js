@@ -63,7 +63,6 @@ document
   });
 
 /* parallax 2*/
-
 document
   .querySelectorAll(".parallaxcontainermedflereelementer2")
   .forEach((parallaxcontainer) => {
@@ -90,7 +89,6 @@ inView(".fotogalleryinview", ({ target }) => {
 });
 
 /* parallax 3*/
-
 document
   .querySelectorAll(".parallaxcontainermedflereelementer3")
   .forEach((parallaxcontainer) => {
@@ -126,6 +124,9 @@ inView(".polaroid_section", () => {
     { delay: 1, duration: 5, direction: "alternate" }
   );
 });
+
+// citat
+const andetcitat = document.querySelector("#pierrecitat_2");
 
 // citat med horisontal scrolling
 const items = document.querySelectorAll("#horisontalliste li");
